@@ -1,38 +1,146 @@
 .App {
-  text-align: center;
+    display: flex;
+    height: 100%;
+    background-color:aliceblue;
+
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    background-color:#fff;
+
+    width: 800px;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #999;
+    padding: 20px;
+    height: 100vh;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.empty {
+    margin-top: 20px;
+    font-size: 30px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_name {
+    margin-top: 5px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.select_block {
+    align-self: center;
+    width: 200px;
+    justify-content: center;
+
+}
+
+.select {
+    border: 1px solid #ccc;
+
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input_text {
+    margin-top: 5px;
+    width: 200px;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.input_text:focus {
+    border: none
+}
+
+.btn {
+    font-size: 25px;
+
+    /* usual styles */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #999;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #3F51B5;
+}
+
+.container_paramEditor {
+    display: flex;
+    justify-content: center;
+}
+
+.render {
+
+    width: 100%;
+    margin: 20px 0;
+  
+
+}
+
+.elem {margin-bottom: 10px ;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.titles {
+    display: inline-block;
+    text-align: start;
+    align-self: center  ;
+    width: 300px;
+
+}
+
+.inputes {
+
+    width: 300px;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.typeNot{
+    width: 300px;
+    text-align: center;
+    align-self: end;
 }
